@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-link {
+    text-decoration: none;
+}
+
+header {
+    min-height: 300px;
+    background: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('/assets/banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+header >* {
+    z-index: 1;
+}
+
+.profile-image {
+    height: 100px;
+    width: 100px;
+    background: white;
+    border-radius: 50%;
+    background-image: url('/assets/pic1.png');
+    background-size: cover;
+}
+
+.profile-name {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.subtext {
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+.main-container {
+    max-width: 750px;
+    min-width: 600px;
+    width: 100%;
+    padding: 0px 16px 0px 16px;
+}
+
+.post {
+    display: flex;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: .3s;
+    margin-top: 16px;
+}
+
+.post:hover {
+    transform: translate3d(0, -5px, 0);
+    box-shadow: 0 2rem 5rem 0 rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.post-image {
+    flex-basis: 40%;
+    background-image: url('/assets/banner.jpeg');
+    background-size: cover;
+}
+
+.post-content {
+    flex-basis: 60%;
+    padding: 24px;
+}
+
+.post-date {
+    color: rgb(122, 122, 122);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.post-title {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.post-title h4 {
+    margin: 0;
+}
+
+.post-text {
+    line-height: 20px;
+    height: 60px;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+
+.nav-button.new-post-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 40px;
+    background-color: #004186;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+.nav-button.new-post-button:hover {
+    background-color: #002349;
+}
+
+
+
+
+footer {
+    min-height: 100px;
+    background-color: #eaecee70;
+    color: #929eaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+}

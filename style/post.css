@@ -1,0 +1,26 @@
+/* ADD styling for all of the divs in post.html to match  */
+.navigation a{
+    text-decoration: none;
+    border: 2px solid rgb(10, 10, 141);
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: rgb(10, 10, 141);
+}
+
+#individual-post-title {
+    margin: 20px 0 5px 16px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#individual-post-date {
+    margin: 20px 0 5px 16px;
+    color: rgb(141, 141, 141);
+}
+
+#individual-post-content {
+    margin: 20px 0 5px 16px;
+    color: #333;
+    line-height: 1.4;
+}
