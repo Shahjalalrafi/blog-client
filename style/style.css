@@ -84,7 +84,6 @@ header >* {
 
 .post-image {
     flex-basis: 40%;
-    background-image: url('/assets/banner.jpeg');
     background-size: cover;
 }
 
